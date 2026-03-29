@@ -9,7 +9,7 @@
 ##  Project Overview
 This project transforms complex California census data into a transparent decision-making tool. Unlike traditional "black box" models, this predictor **statistically justifies every estimation** using SHAP (Shapley Additive Explanations) to build user trust and provide actionable insights.
 ## App Preview
-
+![App Screenshot](Preview.png)
 ##  Technical Highlights
 * **Production Pipeline**: Full automation of preprocessing (StandardScaler) integrated into a Scikit-Learn Pipeline to ensure reproducibility and prevent data leakage.
 * **State-of-the-art Algorithm**: Powered by **XGBoost** for its superior performance on structured data and ability to capture non-linear geographic relationships.
