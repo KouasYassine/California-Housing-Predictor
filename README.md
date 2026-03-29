@@ -1,28 +1,34 @@
-
-# ReviewShield &  California Housing AI
-> **An End-to-End Machine Learning Suite: Real Estate Valuation & NLP Fraud Detection.**
+#  California House Pricing Predictor Pro
+> **End-to-End Real Estate Valuation System with Explainable AI (XAI)**
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Machine Learning](https://img.shields.io/badge/ML-XGBoost%20%26%20RandomForest-orange.svg)
+![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange.svg)
+![SHAP](https://img.shields.io/badge/Interpretability-SHAP-green.svg)
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red.svg)
 
----
-
 ##  Project Overview
-This repository contains two professional-grade AI solutions:
-1.  **California Housing Predictor**: A regression model using **XGBoost** and **SHAP** (Explainable AI) to estimate property values with full transparency.
-2.  **ReviewShield**: A Trust & Safety tool using **NLP (TF-IDF)** to detect fake reviews and coordinated spam patterns.
+This project transforms complex California census data into a transparent decision-making tool. Unlike traditional "black box" models, this predictor **statistically justifies every estimation** using SHAP (Shapley Additive Explanations) to build user trust and provide actionable insights.
+## App Preview
+
+##  Technical Highlights
+* **Production Pipeline**: Full automation of preprocessing (StandardScaler) integrated into a Scikit-Learn Pipeline to ensure reproducibility and prevent data leakage.
+* **State-of-the-art Algorithm**: Powered by **XGBoost** for its superior performance on structured data and ability to capture non-linear geographic relationships.
+* **Explainable AI (XAI)**: Real-time integration of **SHAP** values to decompose the influence of each variable (income, age, location) on the final price.
+* **Multilingual UI**: Fully interactive dashboard with a toggle between **English and Français** for global accessibility.
 
 ---
 
-##  Installation & Execution Instructions
+## Project Structure
+* `src/pipeline.py`: Core engine for data loading, preprocessing, and model training.
+* `app.py`: Interactive user interface developed with Streamlit.
+* `notebooks/`: Exploratory Data Analysis (EDA) and model interpretation experiments.
+* `models/housing_model.pkl`: Serialized production-ready model.
 
-### 1. Environment Setup
-First, clone the repository and install the required libraries:
-```bash
-# Clone the repository
-git clone [https://github.com/your-username/ReviewShield-main.git](https://github.com/your-username/ReviewShield-main.git)
-cd ReviewShield-main
+---
 
-# Install dependencies
-pip install -r requirements.txt
+##  Installation & Execution
+
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/your-username/California-House-Pricing.git](https://github.com/your-username/California-House-Pricing.git)
+   cd California-House-Pricing
